@@ -9,14 +9,17 @@ body {
 html {
   --color-accent: oklch(65% 50% 0);
   accent-color: var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+  color-scheme: light dark;
 }
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+
   display: flex;
   margin-bottom: 1em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
 }
 nav a{
   flex: 1;
@@ -26,7 +29,7 @@ nav a{
   padding: 0.5em;
 }
 nav a.current {
-  border-bottom: 0.4em solid oklch(80% 3% 200);
+  border-bottom: 0.4em solid var(--border-color);
   padding-bottom: 0.1em;
 }
 nav a:hover {
@@ -66,7 +69,7 @@ h1, h2, h3, h4, h5, h6{
   text-wrap: balance;
 }
 .Resume h2{
-  color: black;
+  color: CanvasText;
   padding-bottom: 0.1em;
 }
 .Resume section{
@@ -81,4 +84,13 @@ h1, h2, h3, h4, h5, h6{
 .profile-pic {
   display: block;
   margin-inline: auto;
+}
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
+.color-scheme select {
+  font: inherit;
 }
