@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Project 2 Report</title>
+        <style>
+            :root {
+                --color-neutral-95: hsl(220 10% 95%);
+                --color-neutral-90: hsl(220 10% 90%);
+                --color-neutral-80: hsl(220 10% 80%);
+                --color-neutral-70: hsl(220 10% 70%);
+                --color-neutral-60: hsl(220 10% 60%);
+                --color-neutral-50: hsl(220 10% 50%);
+                --color-neutral-40: hsl(220 10% 40%);
+                --color-neutral-30: hsl(220 10% 30%);
+                --color-neutral-20: hsl(220 10% 20%);
+                --color-neutral-10: hsl(220 10% 10%);
+            }
+
+            html {
+                font: 100%/1.5 system-ui;
+                counter-reset: figure;
+                background: var(--color-neutral-95);
+                max-width: min(75vw, 80em);
+                margin: 0 auto;
+            }
+
+            /* Headings */
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                line-height: 1.1;
+                font-weight: 600;
+                text-wrap: balance;
+            }
+
+            h1,
+            h2 {
+                border-bottom: 1px solid var(--color-neutral-80);
+                padding-bottom: 0.2em;
+            }
+
+            h1 {
+                margin-block: 1em 0.5rem;
+                font-size: clamp(2.5em, 150% + 2vh + 2vw, 10vmin);
+                font-weight: 800;
+
+                small {
+                    display: block;
+                    width: fit-content;
+                    padding: 0.2em 0.5em;
+                    margin-inline: auto;
+                    color: white;
+                    background: var(--color-neutral-40);
+                    font-size: 40%;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                }
+            }
+
+            h2 {
+                font-size: 180%;
+                color: var(--color-neutral-30);
+            }
+
+            h3 {
+                font-size: 130%;
+            }
+
+            /* Lists */
+
+            ul,
+            ol {
+                padding-inline-start: 2em;
+            }
+
+            li {
+                &::marker {
+                    color: var(--color-neutral-40);
+                }
+
+                + li {
+                    margin-top: 0.2em;
+                }
+            }
+
+            /* Sectioning elements */
+
+            header {
+                padding-block: 1em;
+                text-align: center;
+            }
+
+            main {
+                background: white;
+                color: var(--color-neutral-20);
+                border-radius: 1rem;
+                padding: 0.1rem 2rem;
+            }
+
+            /* Figures */
+
+            figure {
+                margin: 1em 0;
+                padding: 0.5rem;
+                margin-inline: -0.5em;
+                border: 1px solid var(--color-neutral-80);
+                box-shadow: 0 0.1em 0.2em var(--color-neutral-95);
+                text-align: center;
+                background: white;
+
+                > figcaption {
+                    font: 500 75% var(--font-sans);
+                    background: var(--color-neutral-95);
+                    padding: 0.5rem;
+                    margin: -0.5rem;
+                    margin-top: 0.5rem;
+                    counter-increment: figure;
+                    text-align: left;
+
+                    &::before {
+                        content: "Figure " counter(figure) ": ";
+                        font-weight: bold;
+                        color: var(--color-neutral-40);
+                    }
+
+                    a:not(:hover, :focus, :active) {
+                        color: inherit;
+                        text-decoration: underline;
+                        text-decoration-color: color-mix(
+                            in lab,
+                            currentColor,
+                            transparent 70%
+                        );
+                    }
+                }
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <small>Project 2</small>
+                Persuasive or Deceptive Visualization?
+            </h1>
+
+            <p><strong>Sergio Iribe</strong> — <em>siribe@ucsd.edu</em></p>
+        </header>
+
+        <main>
+            <h2>Proposition: Is the Human Population in a State of Decline?</h2>
+
+            <section>
+                <h3>FOR the Proposition</h3>
+
+                <figure>
+                    <img src="images/project2_for_visual.png" alt="Children Population Declining From 1990-2019", max-width: 100% />
+                    <figcaption>This visualization compares the percentage of children(ages0-14) in select countries from 1990 and 2019. Each country displays a clear decline in the percentage of children.</figcaption>
+                </figure>
+
+                <p>Design Decisions and Rationale:</p>
+
+                <ul>
+                    <li><b>Color Encoding:</b> I used gray and dark red for the two years. I chose these two colors so the stark difference from the two years would stand out and emphasize that there is a downward trend. The use of dark red also makes the change appear more alarming.</li>
+                    <li><b>Selective Country Selection:</b> I chose seven countries that experienced sizable declines in the percentage of children. I focused on countries that are well known to many and that would persuade readers that the decline of children populations is a worldwide issue.</li>
+                    <li><b>Misleading Title</b>: Lastly, I used a misleading title that stated children population is declining. I did this to give the readers an idea of what they will see and may also lead them to misinterpret the data. The y-axis shows the percentage of children in a population but this does not show the actual number of children, which could have shown a different story</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>AGAINST the Proposition</h3>
+
+                <figure>
+                    <img src="images/project2_against_visual.png" alt="A Longer-Living Population: 1990-2019" />
+                    <figcaption>This visulization shows the increase in average life expectancy between 1990 and 2019 among the selected countries. Every country shows a positive trend that suggests people are living longer.</figcaption>
+                </figure>
+
+                <p>Design Decisions and Rationale:</p>
+
+                <ul>
+                    <li><b>Color Encoding:</b> The use of green was intentional to emphasize that every country is showing positive growth from 1990 to 2019 in life expectancy. I chose green because we associate green with good which would make these changes appear as a postive.</li>
+                    <li><b>Selective Country Selection:</b> I purposely chose countries that displayed increases in life expectancy and are also well known countries around the world. Using large and medium sized countries can persuade the reader that the human population is not at risk because people are living longer.</li>
+                    <li><b>Positioning:</b> For this visualization, I chose to display the countries on the y-axis so the reader could read and compare from left to right. In addition, I organized the data and combined that with showing the percentages and the plus signs to emphasize a positive trend. Doing so can mask the fact that some countries have a large increase in life expectancy but their overall life expectancy is still lower than other countries.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Final Reflection</h2>
+
+                <p>For my final submission, I decided to change my proposition question and my against visualization. I chose to alter my original question because I wanted it to be more open ended so that both sides could have compelling arguements. This also led me to replace my against visualization from using working age population data to life expectancy. I did this because it showed a better contrast to the idea that there are less humans being born causing a decline in human population.</p>
+                    
+                <p>My FOR visualization focused on percentage of children ages 0-14 and I did this because declining birth rates is a common concern brought up nowadays. The use of dark red was used due to human's innate understanding that red means bad/danger. I adjusted this visualization as well by adding two bars for each country that represented the different years and adding their percentages on the top of the bars. I did this because my original visualization had a single bar for each country falling down with negative numbers on the y-axis which was difficult to read the more I reviewed it. My AGAINST visualization was originally a horizontal bar chart showing percentage of working age population. Similar to the FOR visualization this was difficult to read and follow so I chose to focus on life expectancy. I still kept the countries on the y-axis and the percent increase on the x-axis as it highlighted that each country is increasing. Having adjusted both my visualizations, I now believe my FOR visualization is more persuasive because the negative trend is greater among the seven countries compared to their positive trend in the AGAINST visualization.</p>
+                    
+                <p>One of the biggest things I learned from this project is how easily data can be presented in a way that influences someone's interpretation. Both visualizations use actual data, but I purposely selected certain countries, colors, titles, and ways of displaying the information to support opposing arguments. 
+                </p>
+            </section>
+        </main>
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"c822b88e119346678db149ed7b7721c9","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
