@@ -1,33 +1,39 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam deserunt esse totam. Odio at veritatis quis, minima dolor eius id repudiandae doloribus animi, dignissimos soluta expedita fuga. Minus, omnis."
+        "title": "Grocery Store Health Facts",
+        "year": 2026,
+        "image": "/lib/Grocery_Store_Health_Facts.png",
+        "description": "A data visualization comparing nutritional information across grocery stores."
     },
     {
-        "title": "Quam sint consequuntur vero.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Distinctio ullam numquam magnam magni neque quibusdam voluptates est ea eum quod reprehenderit doloremque ad, nobis eaque delectus! Sunt qui fugiat, quasi architecto ducimus expedita corrupti laborum reiciendis eligendi itaque."
+        "title": "US Energy Emissions Over Time",
+        "year": 2025,
+        "image": "/lib/US_emissions_1960_2020.png",
+        "description": "A data visualization created using Python and Matplotlib to analyze historical US emissions from coal, natural gas, and oil. The line graph highlights changes in emissions over time and compares trends across the three energy sources."
     },
     {
-        "title": "Unde iure dicta quibusdam.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Voluptates ducimus dolor beatae. Ratione, accusamus nam pariatur nulla repellat maiores in necessitatibus consequuntur atque earum eius reiciendis enim architecto quis, qui voluptate et, distinctio debitis accusantium cum doloribus beatae."
+        "title": "Restaurant Cuisine Classification Using NLP",
+        "year": 2026,
+        "image": "/lib/NLP_TF_IDF.png",
+        "description": "Developed a natural language processing model using Python and TF-IDF to classify restaurants into 10 cuisine categories based on text features from reviews and restaurant names. Evaluated the model using precision, recall, and F1-scores, achieving 80% classification accuracy."
     },
     {
-        "title": "Dicta quia non deleniti?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Facere maxime quasi quam nulla ducimus, placeat minus alias deserunt ad cumque non illo qui reprehenderit. Quidem modi eveniet quaerat porro itaque adipisci, quis, rem at veniam beatae placeat nihil!"
+        "title": "Handwritten Digit Classification with Gaussian Generative Models",
+        "year": 2026,
+        "image": "/lib/Classification_Prediction.png",
+        "description": "Applied Gaussian generative modeling to classify handwritten digits from the MNIST dataset using Python. Explored probability distributions and statistical classification techniques to recognize handwritten numbers and compare model performance with nearest-neighbor classification."
     },
     {
-        "title": "Eos iste voluptates ipsa.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Atque ducimus sunt porro ab assumenda cupiditate amet consequatur, illum explicabo praesentium neque a quia impedit. Porro consectetur suscipit quasi ad officia nemo exercitationem ut praesentium excepturi voluptatem? Aspernatur, neque."
+        "title": "Happiness and Life Expectancy: Correlation Analysis",
+        "year": 2025,
+        "image": "/lib/Happiness_vs_Life.png",
+        "description": "Conducted an exploratory data analysis using Python to investigate the relationship between happiness scores and life expectancy. Used Pandas to calculate Pearson correlation coefficients and Seaborn to visualize relationships through scatter plots. Identified a strong positive correlation (r = 0.765) between happiness and life expectancy."
     },
     {
-        "title": "Aspernatur tenetur recusandae quos!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sit magni, perferendis iure pariatur enim odio vitae incidunt et. Molestiae voluptas est ex repellat. Illo odio fugiat voluptatem, error totam quisquam laborum veniam quibusdam eligendi itaque, mollitia culpa exercitationem!"
+        "title": "Image Classification Using Convolutional Neural Networks",
+        "year": 2024,
+        "image": "/lib/neural_network_Accuracy.png",
+        "description": "Developed a convolutional neural network (CNN) using Python and Keras to classify images into 24 categories. Implemented convolutional layers, max pooling, dropout, and dense layers to train the model. Evaluated training and testing accuracy across 10 epochs, achieving approximately 99.9% test accuracy."
     },
     {
         "title": "Vitae dolorum error a.",
