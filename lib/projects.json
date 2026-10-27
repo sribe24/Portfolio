@@ -2,37 +2,37 @@
     {
         "title": "Grocery Store Health Facts",
         "year": 2026,
-        "image": "/lib/Grocery_Store_Health_Facts.png",
+        "image": "lib/Grocery_Store_Health_Facts.png",
         "description": "A data visualization comparing nutritional information across grocery stores."
     },
     {
         "title": "US Energy Emissions Over Time",
         "year": 2025,
-        "image": "/lib/US_emissions_1960_2020.png",
+        "image": "lib/US_emissions_1960_2020.png",
         "description": "A data visualization created using Python and Matplotlib to analyze historical US emissions from coal, natural gas, and oil. The line graph highlights changes in emissions over time and compares trends across the three energy sources."
     },
     {
         "title": "Restaurant Cuisine Classification Using NLP",
         "year": 2026,
-        "image": "/lib/NLP_TF_IDF.png",
+        "image": "lib/NLP_TF_IDF.png",
         "description": "Developed a natural language processing model using Python and TF-IDF to classify restaurants into 10 cuisine categories based on text features from reviews and restaurant names. Evaluated the model using precision, recall, and F1-scores, achieving 80% classification accuracy."
     },
     {
         "title": "Handwritten Digit Classification with Gaussian Generative Models",
         "year": 2026,
-        "image": "/lib/Classification_Prediction.png",
+        "image": "lib/Classification_Prediction.png",
         "description": "Applied Gaussian generative modeling to classify handwritten digits from the MNIST dataset using Python. Explored probability distributions and statistical classification techniques to recognize handwritten numbers and compare model performance with nearest-neighbor classification."
     },
     {
         "title": "Happiness and Life Expectancy: Correlation Analysis",
         "year": 2025,
-        "image": "/lib/Happiness_vs_Life.png",
+        "image": "lib/Happiness_vs_Life.png",
         "description": "Conducted an exploratory data analysis using Python to investigate the relationship between happiness scores and life expectancy. Used Pandas to calculate Pearson correlation coefficients and Seaborn to visualize relationships through scatter plots. Identified a strong positive correlation (r = 0.765) between happiness and life expectancy."
     },
     {
         "title": "Image Classification Using Convolutional Neural Networks",
         "year": 2024,
-        "image": "/lib/neural_network_Accuracy.png",
+        "image": "lib/neural_network_Accuracy.png",
         "description": "Developed a convolutional neural network (CNN) using Python and Keras to classify images into 24 categories. Implemented convolutional layers, max pooling, dropout, and dense layers to train the model. Evaluated training and testing accuracy across 10 epochs, achieving approximately 99.9% test accuracy."
     },
     {
