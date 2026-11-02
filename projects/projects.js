@@ -56,7 +56,7 @@ function renderPieChart(projectsGiven) {
                 }
 
 
-        });
+        })
     });    
 
     let legend = d3.select('.legend');
