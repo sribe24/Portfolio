@@ -160,3 +160,106 @@ path {
   padding: 1em;
   font: inherit;
 }
+
+#stats{
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.5em 0;
+  border: 2px solid black;
+}
+
+dl.stats {
+  display: grid;
+  grid-template-columns: (repeat(6, minmax(0, 1fr)));
+  grid-template-rows: auto;
+  gap: 0.5em;
+  margin: 0;
+}
+
+dl.stats dt {
+  grid-row: 1;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+dl.stats dd {
+  grid-row: 2;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.gridlines {
+  stroke: lightgray;
+  stroke-width: 1px;
+  stroke-opacity: 0.3;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: (repeat(6, minmax(0, 1fr)));
+  grid-template-rows: auto;
+  gap: 0.5em;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+dl.info dt {
+  grid-row: 1;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+dl.info dd {
+  grid-row: 2;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.tooltip {
+  position: fixed;
+  pointer-events: none;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  backdrop-filter: blur(5px);
+  top: 1em;
+  left: 1em;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
