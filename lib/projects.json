@@ -36,9 +36,11 @@
         "description": "Developed a convolutional neural network (CNN) using Python and Keras to classify images into 24 categories. Implemented convolutional layers, max pooling, dropout, and dense layers to train the model. Evaluated training and testing accuracy across 10 epochs, achieving approximately 99.9% test accuracy."
     },
     {
-        "title": "Vitae dolorum error a.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Rerum velit maiores quisquam exercitationem maxime, vitae reiciendis? Fuga deserunt asperiores corrupti quam sint magni modi incidunt, quaerat iste quae nesciunt, odit dicta eum velit architecto ratione mollitia fugit amet."
+        "title": "Bike-GeoMap",
+        "year":2026,
+        "image": "lib/Bike Geo-Map.png",
+        "description": "An interactive map of Boston bike-sharing traffic that visualizes station activity, arrivals, departures, and time-based patterns.",
+        "url":"https://sribe24.github.io/Bike-GeoMap/"
     },
     {
         "title": "Totam dolor tempora magnam!",
