@@ -219,3 +219,38 @@ function renderLanguageBreakdown(selection) {
             <dd>${count} lines (${formatted})</dd> `;
     }
 }
+
+let commitProgress = 100;
+
+let timeScale = d3
+    .scaleTime()
+    .domain([
+        d3.min(commits, (d) => d.datetime),
+        d3.max(commits, (d) => d.datetime),
+    ])
+    .range([0,100]);
+
+let commitMaxTime = timeScale.invert(commitProgress);
+
+let filteredCommits = commits;
+
+function onTimeSliderChange() {
+    const slider = document.getElementById('commit-progress');
+    const timeDisplay = document.getElementById('commit-time');
+
+    commitProgress = Number(slider.value);
+    commitMaxTime = timeScale.invert(commitProgress);
+
+    timeDisplay.textContent = commitMaxTime.toLocaleString('en-US', {
+        dateStyle: 'long',
+        timeStyle: 'short'
+    });
+
+    filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
+}
+
+const timeSlider = document.getElementById('commit-progress');
+
+timeSlider.addEventListener('input', onTimeSliderChange);
+
+onTimeSliderChange();
