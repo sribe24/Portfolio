@@ -170,7 +170,7 @@ path {
 
 dl.stats {
   display: grid;
-  grid-template-columns: (repeat(6, minmax(0, 1fr)));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-template-rows: auto;
   gap: 0.5em;
   margin: 0;
@@ -274,8 +274,10 @@ time {
   margin-left: auto;
 }
 
-@starting-style {
-  r:0;
+circle{
+  @starting-style {
+    r: 0;
+  }
 }
 
 #files {
@@ -304,11 +306,11 @@ time {
   display: flex;
   width: 0.5em;
   aspect-ratio: 1;
-  background: steelblue;
+  background: var(--color);
   border-radius: 50%;
 }
 
-dd {
+#files dd {
   grid-column: 2;
   display: flex;
   flex-wrap: wrap;
@@ -317,4 +319,29 @@ dd {
   gap: 0.15em;
   padding-top: 0.6em;
   margin-left: 0;
+}
+
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+
+  > * {
+    flex: 1;
+  }
+}
+
+
+#scatter-story {
+  position: relative;
+}
+
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
 }
