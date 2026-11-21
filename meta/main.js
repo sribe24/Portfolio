@@ -337,9 +337,9 @@ function updateScatterPlot(data, commits) {
     .attr('cy', (d) => yScale(d.hourFrac))
     .attr('r', (d) => rScale(d.totalLines))
     .attr('fill', 'steelblue')
-    .style('fill-opacity', 0.7) // Add transparency for overlapping dots
+    .style('fill-opacity', 0.7)
     .on('mouseenter', (event, commit) => {
-      d3.select(event.currentTarget).style('fill-opacity', 1); // Full opacity on hover
+      d3.select(event.currentTarget).style('fill-opacity', 1);
       renderTooltipContent(commit);
       updateTooltipVisibility(true);
       updateTooltipPosition(event);
